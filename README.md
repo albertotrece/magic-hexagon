@@ -22,4 +22,4 @@ Copyright &copy; 2014 David Bailey
     GNU General Public License for more details.
 
     You can read the GPLv3 license at this address:
-    [https://www.gnu.org/copyleft/gpl.html#content](https://www.gnu.org/copyleft/gpl.html#content)
+    https://www.gnu.org/copyleft/gpl.html#content
