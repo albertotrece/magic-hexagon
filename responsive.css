@@ -1,0 +1,128 @@
+@media only screen and (max-width: 1142px), (max-height: 640px) {
+	#hex, #finished {
+		-webkit-transform: scale(0.75);
+		transform: scale(0.75);
+	}
+}
+
+@media only screen and (max-width: 1024px), (max-height: 450px) {
+	#hex, #finished {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#hex, #finished {
+		-webkit-transform: scale(0.333);
+		transform: scale(0.333);
+	}
+	
+	#restart, #hiScore, #score {
+		font-size: 16px !important;
+	}
+	
+	#rotateLeft, #rotateRight {
+		top: 20% !important;
+	}
+	
+	.number {
+		-webkit-transform: scale(1.5);
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#rotateLeft, #rotateRight {
+		top: 30% !important;
+	}
+	
+	#rotateLeft {
+		left: 10% !important;
+	}
+	
+	#rotateRight {
+		right: 10% !important;
+	}
+	
+	#finished {
+		right: 0 !important;
+	}
+	
+	#title .small {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	#finished {
+		top: initial !important;
+		bottom: 32px;
+	}
+	
+	#title .small {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	#title {
+		left: 8px !important;
+	}
+	
+	iframe {
+		right: 8px !important;
+	}
+	
+	#dAdonate {
+		right: 71px !important;
+	}
+	
+	#finished {
+		right: -64px !important;
+	}
+	
+	#rotateLeft, #rotateRight {
+		top: 40% !important;
+	}
+	
+	#rotateLeft {
+		left: 8px !important;
+	}
+	
+	#rotateRight {
+		right: 8px !important;
+	}
+}
+
+@media only screen and (max-height: 570px) {
+	body {
+		position: absolute;
+		width: 100%;
+		height: 620px;
+		z-index: -2;
+	}
+	
+	html {
+		overflow-y: scroll;
+	}
+}
+
+@media only screen and (max-width: 365px) {
+	#dAdonate, iframe {
+		opacity: 0;
+	}
+	
+	#restart, #hiScore, #score {
+		left: 8px !important;
+	}
+	
+	#message {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 340px), (max-height: 495px) {
+	#warning {
+		display: block !important;
+	}
+}
