@@ -314,10 +314,13 @@ function win() {
 	message('You win! Score: ' + score + ' (lowest is best). <a onclick="hideMessage();init()">Click to play again</a>, <a onclick="window.open(' + "'" + 'https://twitter.com/intent/tweet?source=webclient&text=My+score+in+Magic+Hexagon+by+%40devilishdb+is+' + score + '%21+%28Lowest+is+best.%29+Play+it+at+http%3A%2F%2Fdevilishdb.github.io%2Fmagic-hexagon%2F' + "'" + ', ' + "'" + 'popupFinished' + "'" + ', ' + "'" + 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=600,height=258' + "'" + ')">tweet your score</a> or just play freestyle.');
 	deleteState();
 	if (localStorage.getItem('hiScore') !== null) {
-		if (parseInt(localStorage.getItem('hiScore')) > score) {
+		if (parseInt(localStorage.getItem('hiScore')) >= score) {
 			document.getElementById('hiScore').innerHTML = score;
 			localStorage.setItem('hiScore', score);
 		}
+	} else {
+		document.getElementById('hiScore').innerHTML = score;
+		localStorage.setItem('hiScore', score);
 	}
 	window.setTimeout(function() {
 		showFinishedBasic();
