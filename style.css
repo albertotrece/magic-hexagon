@@ -1,0 +1,441 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+	margin: 0;
+	background: #dedede;
+	overflow: hidden;
+}
+
+* {
+	font-family: Open Sans;
+	transition: 0.1s;
+}
+
+#warning {
+	display: none;
+	position: absolute;
+	width: calc(100% - 32px);
+	height: calc(100% - 32px);
+	z-index: 2;
+	padding: 16px;
+	background: #c00000;
+	color: #fff;
+	font-size: 20px;
+	text-align: justify;
+}
+
+#hideWarning {
+	width: calc(100% - 20px);
+	text-decoration: none;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 6px;
+	display: block;
+	padding: 8px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+#hideWarning:active {
+	background: #fff;
+	color: #c00000;
+}
+
+#title {
+	position: absolute;
+	bottom: 32px;
+	left: 32px;
+	font-size 32px;
+	font-weight: 400;
+	margin: 0;
+}
+
+#title .small {
+	color: #606060;
+	font-size: 16px;
+}
+
+#score {
+	position: absolute;
+	bottom: 132px;
+	left: 32px;
+	font-size: 24px;
+	color: #404040;
+	background: #dedede;
+	border-radius: 4px;
+}
+
+#score:before {
+	content: 'Score: ';
+}
+
+#score:after {
+	content: ' (Lowest is best)';
+}
+
+#hiScore {
+	position: absolute;
+	bottom: 100px;
+	left: 32px;
+	font-size: 24px;
+	color: #404040;
+	background: #dedede;
+	border-radius: 4px;
+}
+
+#hiScore:before {
+	content: 'Top Score: ';
+}
+
+#restart {
+	position: absolute;
+	bottom: 164px;
+	left: 32px;
+	font-size: 24px;
+	background: #dedede;
+	border-radius: 4px;
+}
+
+a {
+	color: #2259d7;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+iframe {
+	bottom: 32px;
+	right: 32px;
+	position: absolute;
+}
+
+#dAdonate {
+	width: 45px;
+	height: 54px;
+	position: absolute;
+	bottom: 32px;
+	right: 119px;
+	cursor: pointer;
+	border: 1px solid #ae1837;
+	background: url('img/points.png') 50% 92% no-repeat, linear-gradient(#e64768, #e4375b);
+	border-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+	padding: 3px 4px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#dAdonate:hover {
+	background: url('img/points.png') 50% 92% no-repeat, linear-gradient(#e95a77, #e74b6c);
+}
+
+#dAdonate:active {
+	background: url('img/points.png') 50% 92% no-repeat, linear-gradient(#d82741, #e84b6e);
+}
+
+#hex {
+	width: 500px;
+	height: 1000px;
+	top: calc(50% - 500px);
+	left: calc(50% - 250px);
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	transition: 0s;
+}
+
+#hex1, #hex2 {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#hex1 {
+	-webkit-transform: rotateZ(60deg);
+	transform: rotateZ(60deg);
+}
+
+#hex2 {
+	-webkit-transform: rotateZ(60deg);
+	transform: rotateZ(60deg);
+	background: #fff;
+}
+
+#content {
+	position: absolute;
+	top: calc(50% - 290px);
+	width: 100%;
+	height: 58%;
+}
+
+#finished {
+	position: absolute;
+	width: 250px;
+	height: 288px;
+	background: url('img/finished.png') 50% 50% no-repeat;
+	background-size: 100%;
+	top: calc(50% - 144px);
+	right: 64px;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.arrow {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	position: absolute;
+}
+
+.arrowRight {
+	border-left: 104px solid transparent;
+}
+
+.arrowLeft {
+	border-right: 104px solid transparent;
+}
+
+.arrow[data-color=blue] {
+	border-left-color: #2259d7;
+	border-right-color: #2259d7;
+}
+
+.arrow[data-color=red] {
+	border-left-color: #d62408;
+	border-right-color: #d62408;
+}
+
+.arrow[data-color=green] {
+	border-left-color: #2bad31;
+	border-right-color: #2bad31;
+}
+
+.arrow[data-color=yellow] {
+	border-left-color: #ffcf00;
+	border-right-color: #ffcf00;
+}
+
+.a {
+	top: 16px;
+	right: 139px;
+}
+
+.b {
+	top: 88px;
+	right: 16px;
+}
+
+.c {
+	bottom: 88px;
+	right: 16px;
+}
+
+.d {
+	bottom: 16px;
+	right: 139px;
+}
+
+.e {
+	top: 159px;
+	left: 10px;
+}
+
+.f {
+	bottom: 159px;
+	left: 10px;
+}
+
+.g {
+	top: 16px;
+	left: 139px;
+}
+
+.h {
+	top: 88px;
+	left: 16px;
+}
+
+.i {
+	bottom: 88px;
+	left: 16px;
+}
+
+.j {
+	bottom: 16px;
+	left: 139px;
+}
+
+.k {
+	top: 159px;
+	right: 10px;
+}
+
+.l {
+	bottom: 159px;
+	right: 10px;
+}
+
+.m {
+	top: 88px;
+	left: 133px;
+}
+
+.n {
+	top: 88px;
+	right: 133px;
+}
+
+.o {
+	top: 230px;
+	right: 16px;
+}
+
+.p {
+	bottom: 88px;
+	right: 133px;
+}
+
+.q {
+	bottom: 88px;
+	left: 133px;
+}
+
+.r {
+	top: 230px;
+	left: 16px;
+}
+
+.s {
+	top: 159px;
+	right: 139px;
+}
+
+.t {
+	bottom: 159px;
+	right: 139px;
+}
+
+.u {
+	top: 230px;
+	left: 133px;
+}
+
+.v {
+	top: 159px;
+	left: 139px;
+}
+
+.w {
+	bottom: 159px;
+	left: 139px;
+}
+
+.x {
+	top: 230px;
+	right: 133px;
+}
+
+.number {
+	font-weight: 700;
+	font-size: 32px;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	padding: 0 6px 12px;
+	background: #a9a9a9;
+	border-radius: 16px;
+	text-align: center;
+	border: 2px solid #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
+}
+
+.number:active, #rotateLeft:active, #rotateRight:active, .number.active {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	background-color: #7d98d7;
+	border-color: #000;
+}
+
+#number0 {
+	top: 266px;
+	left: 226px;
+}
+
+#number1 {
+	top: 124px;
+	left: 226px;
+}
+
+#number2 {
+	top: 195px;
+	right: 102px;
+}
+
+#number3 {
+	bottom: 196px;
+	right: 102px;
+}
+
+#number4 {
+	bottom: 124px;
+	left: 226px;
+}
+
+#number5 {
+	bottom: 196px;
+	left: 102px;
+}
+
+#number6 {
+	top: 195px;
+	left: 102px;
+}
+
+#rotateLeft, #rotateRight {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	padding: 2px 8px 14px;
+	background: #a9a9a9 50% 50% no-repeat;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
+	top: 15%;
+	background-size: 66.7%;
+}
+
+#rotateLeft {
+	left: 25%;
+	background-image: url('img/rotate-left.png');
+}
+
+#rotateRight {
+	right: 25%;
+	background-image: url('img/rotate-right.png');
+}
+
+#message {
+	position: absolute;
+	top: -2px;
+	left: 10%;
+	width: calc(80% - 4px);
+	background: #fff;
+	padding: 6px;
+	border-radius: 0 0 16px 16px;
+	border: 2px solid #a9a9a9;
+}
+
+.hidden {
+	opacity: 0;
+}
