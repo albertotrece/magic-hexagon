@@ -311,7 +311,7 @@ function testForWin() {
 }
 
 function win() {
-	message('You win! Score: ' + score + ' (lowest is best). <a onclick="hideMessage();init()">Click to play again</a>, <a onclick="window.open(' + "'" + 'https://twitter.com/intent/tweet?source=webclient&text=My+score+in+%23MagicHexagon+by+%40devilishdb+is+' + score + '%21+%28Lowest+is+best.%29+Play+it+at+http%3A%2F%2Fbit.ly%2FMagicHex' + "'" + ', ' + "'" + 'popupFinished' + "'" + ', ' + "'" + 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=600,height=258' + "'" + ')">tweet your score</a> or just play freestyle.');
+	message('You win! Score: ' + score + ' (lowest is best). <a onclick="hideMessage();init()">Click to play again</a>, <a onclick="window.open(' + "'" + 'https://twitter.com/intent/tweet?text=My+score+in+%23MagicHexagon+by+%40devilishdb+is+' + score + '%21+%28Lowest+is+best.%29+Play+it+at+http%3A%2F%2Fbit.ly%2FMagicHex' + "'" + ', ' + "'" + 'popupFinished' + "'" + ', ' + "'" + 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=600,height=258' + "'" + ')">tweet your score</a> or just play freestyle.');
 	deleteState();
 	if (localStorage.getItem('hiScore') !== null) {
 		if (parseInt(localStorage.getItem('hiScore')) >= score) {
