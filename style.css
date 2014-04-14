@@ -443,3 +443,7 @@ iframe {
 .hidden {
 	opacity: 0;
 }
+
+#warning.hidden {
+	z-index: -2;
+}
