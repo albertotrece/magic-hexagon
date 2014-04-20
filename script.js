@@ -1,4 +1,9 @@
 window.onload = initState();
+startAutoZoom(1240, 750, 'fixed');
+
+function customAutoZoom() {
+	autoZoom(1240, 750, 'fixed');
+}
 
 function strToFunction(string) {
 	script = document.createElement('script');

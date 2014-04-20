@@ -2,15 +2,10 @@
 <html>
 	<head>
 		<title>Magic Hexagon</title>
-		<link rel="stylesheet" href="responsive.css" />
 		<link rel="stylesheet" href="style.css" />
 		<meta charset="utf-8" />
 	</head>
 	<body>
-		<div id="warning">
-			Your device is smaller than recommended&#8230; so your experience might not be as good as expected. To get a better experience, play on a bigger device.
-			<a id="hideWarning" onclick="hideWarning()">Continue anyway</a>
-		</div>
 		<h1 id="title">Magic Hexagon <span class="small">A puzzle game by <a href="http://devilishdb.deviantart.com" target="_blank">DevilishDB</a></span></h1>
 		<div id="rotateLeft"></div>
 		<div id="rotateRight"></div>
@@ -90,6 +85,7 @@
 				<div class="number" id="number6" data-rotate="0" onclick="setNum(6)">6</div>
 			</div>
 		</div>
+		<script src="zoom.js"></script>
 		<script src="script.js"></script>
 		<script id='fbne3le'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='http://api.flattr.com/button/view/?uid=DevilishDB&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbne3le')</script>
 	</body>
