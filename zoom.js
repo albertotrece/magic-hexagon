@@ -27,4 +27,5 @@ function startAutoZoom(width, height, pos) {
 		autoZoom(width, height, pos);
 	}
 	window.onresize = specialAutoZoom;
+	specialAutoZoom();
 }
