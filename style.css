@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;
-	background: #dedede;
+	background: #f5f4f1;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -56,7 +56,7 @@ body {
 }
 
 #title .small {
-	color: #606060;
+	color: #333;
 	font-size: 16px;
 }
 
@@ -65,8 +65,8 @@ body {
 	bottom: 132px;
 	left: 32px;
 	font-size: 24px;
-	color: #404040;
-	background: #dedede;
+	color: #333;
+	background: #f5f4f1;
 	border-radius: 4px;
 }
 
@@ -83,8 +83,8 @@ body {
 	bottom: 100px;
 	left: 32px;
 	font-size: 24px;
-	color: #404040;
-	background: #dedede;
+	color: #333;
+	background: #f5f4f1;
 	border-radius: 4px;
 }
 
@@ -97,12 +97,12 @@ body {
 	bottom: 164px;
 	left: 32px;
 	font-size: 24px;
-	background: #dedede;
+	background: #f5f4f1;
 	border-radius: 4px;
 }
 
 a {
-	color: #2259d7;
+	color: #b384a9;
 	text-decoration: none;
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -354,7 +354,7 @@ iframe {
 	width: 32px;
 	height: 32px;
 	padding: 0 6px 12px;
-	background: #a9a9a9;
+	background: #dcd6d0;
 	border-radius: 16px;
 	text-align: center;
 	border: 2px solid #fff;
@@ -414,7 +414,7 @@ iframe {
 	width: 48px;
 	height: 48px;
 	padding: 2px 8px 14px;
-	background: #a9a9a9 50% 50% no-repeat;
+	background: #dcd6d0 50% 50% no-repeat;
 	border-radius: 20px;
 	border: 2px solid #fff;
 	-webkit-user-select: none;
@@ -442,7 +442,7 @@ iframe {
 	background: #fff;
 	padding: 6px;
 	border-radius: 0 0 16px 16px;
-	border: 2px solid #a9a9a9;
+	border: 2px solid #dcd6d0;
 }
 
 .hidden {
