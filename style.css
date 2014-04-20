@@ -366,8 +366,13 @@ iframe {
 .number:active, #rotateLeft:active, #rotateRight:active, .number.active {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
-	background-color: #dd4814;
+	background-color: #fab382;
 	border-color: #000;
+}
+
+.number.active {
+	-webkit-transform: initial;
+	transform: initial;
 }
 
 #no0, #no1, #no2, #no3, #no4, #no5, #no6 {
